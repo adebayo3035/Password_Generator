@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator Application</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h2> Password Generator</h2>
+        <div class="display-password"><span id="password">DFF </span> <i class="fa fa-copy" id="copy-password"></i></div>
+            <div class="password-generator">
+                <div class="password-length">
+                    <span> Character Length</span> <span id="char-length">10</span>
+                </div>
+                <div class="password-range">
+                        <input type="range" id="password-range" min="0" max="20">
+                </div>
+               
+                <div class="condition">
+                    <input type="checkbox" id="uppercase"> <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="condition">
+                        <input type="checkbox" id="lowercase"> <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="condition">
+                        <input type="checkbox" id="numbers"> <label for="numbers">Include Numbers</label>
+                </div>
+                <div class="condition">
+                    <input type="checkbox" id="symbols"> <label for="symbols">Include Symbols</label>
+                </div>
+
+                <div class="password-strength">
+                    <span> STRENGTH</span> <span id="strength-indicator">MEDIUM <span id="oneFill" class="password-fill">1</span><span id="twoFill" class="password-fill">1</span><span id="threeFill" class="password-fill">1</span><span id="fourFill" class="password-fill">1</span> </span>
+                </div>
+                <button type="submit" id="btnGenerate">GENERATE <i class="fa fa-arrow-right"></i></button>
+            </div>
+        
+    </main>
+
+</body>
+
+</html>

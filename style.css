@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    /* border: 2px solid #fff; */
+    justify-content: center;
+    justify-items: center;
+    width: 35%;
+    margin: 50px auto;
+}
+.container h2{
+    text-align: center;
+    margin: 5px;
+}
+.container .display-password{
+    background-color: #3A3B3C;
+    padding: 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content:space-between;
+    margin:10px 5px;
+}
+.container .display-password #copy-password{
+    cursor: pointer;
+}
+.container .password-generator{
+    background-color: #3A3B3C;
+    margin: 10px 5px;
+}
+.container .password-generator .password-length{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.container .password-generator .password-range{
+    /* border: 2px solid #fff; */
+}
+.container .password-generator .password-range input[type="range"]{
+    width: 100%;
+    background: #205928;
+}
+.container .password-generator .condition{
+    display: flex;
+    padding: 10px;
+}
+.container .password-generator .condition input[type=checkbox], .container .password-generator .condition label{
+    margin: 0px 5px;
+    font-size: 13px;
+}
+.container .password-generator .password-strength{
+    border: 2px solid #000;
+    background-color: #000;
+    margin: 0px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .password-generator .password-strength #strength-indicator{
+    /* display: flex;
+    justify-content: space-between; */
+}
+.container .password-generator .password-strength #strength-indicator .password-fill{
+    height:5px;
+    width: 5px;
+    background: orange;
+    margin: 2px;
+    color: orange
+}
+.container .password-generator button{
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    width: 95%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 10px;
+    font-weight: 900;
+}
